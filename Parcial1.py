@@ -247,7 +247,7 @@ def agregar_codigos_personajes(lista):
     """Recibe una lista y un personaje, crea una nueva clave dentro de la lista de diccionarios
     guardando un string en ella y retorna la lista"""
     for personaje in lista:
-        codigo_personaje = generar_codigo_personaje(personaje)
+        codigo_personaje = generar_codigo_personaje(i-1)
         personaje["Codigo"] = codigo_personaje
     
     return lista
